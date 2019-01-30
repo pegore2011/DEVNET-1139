@@ -1,0 +1,461 @@
+{
+	"info": {
+		"_postman_id": "ff2ef476-7094-4b5a-b08e-fbeeaa590e9a",
+		"name": "C3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get a List of Users",
+			"item": [
+				{
+					"name": "List of Users",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "B2BE51EBB2208CB3",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cliqradmin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://10.29.205.225/v1/users",
+							"protocol": "https",
+							"host": [
+								"10",
+								"29",
+								"205",
+								"225"
+							],
+							"path": [
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get a List of Apps",
+			"item": [
+				{
+					"name": "v1 API List of Apps",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "B2BE51EBB2208CB3",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cliqradmin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://10.29.205.225/v1/apps",
+							"protocol": "https",
+							"host": [
+								"10",
+								"29",
+								"205",
+								"225"
+							],
+							"path": [
+								"v1",
+								"apps"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Create a User",
+			"item": [
+				{
+					"name": "Create a User",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "cliqradmin",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "B2BE51EBB2208CB3",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "      {\n            \"password\": \"bubba12345\",\n            \"enabled\": true,\n            \"isSelfActivation\": false,\n            \"firstName\": \"bubba\",\n            \"lastName\": \"Gore\",\n            \"companyName\": \"Cliqr\",\n            \"tenantId\": \"1\",\n            \"emailAddr\": \"bubba@cliqrtech.com\",\n            \"phoneNumber\": null,\n            \"externalId\": null,\n            \"status\": \"ENABLED\",\n            \"detail\": null,\n            \"activationData\": null,\n            \"coAdmin\": false,\n            \"tenantAdmin\": true,\n            \"activationProfileId\": null,\n            \"hasSubscriptionPlanType\": false\n        }"
+						},
+						"url": {
+							"raw": "https://10.29.205.225/v1/users",
+							"protocol": "https",
+							"host": [
+								"10",
+								"29",
+								"205",
+								"225"
+							],
+							"path": [
+								"v1",
+								"users"
+							]
+						},
+						"description": "Generated from a curl request: \ncurl -s -k -X POST -D response_headers.txt -H \\\"Accept: application/json\\\" -H \\\"Content-Type: application/json\\\" -u cliqradmin:B2BE51EBB2208CB3 https://10.29.205.225/v1/users -d @pete.json"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Create Users",
+			"item": [
+				{
+					"name": "C3 Create Users - Runner",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "B2BE51EBB2208CB3",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cliqradmin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n            \"password\": \"{{C3-pwd}}\",\n            \"enabled\": {{C3-enabled}},\n            \"isSelfActivation\": false,\n            \"firstName\": \"{{C3-first}}\",\n            \"lastName\": \"{{C3-last}}\",\n            \"companyName\": \"{{C3-company}}\",\n            \"tenantId\": \"{{C3-tenant}}\",\n            \"emailAddr\": \"{{C3-email}}@cliqrtech.com\",\n            \"phoneNumber\": {{C3-phone}},\n            \"externalId\": {{C3-external}},\n            \"status\": \"{{C3-status}}\",\n            \"detail\": {{C3-detail}},\n            \"activationData\": {{C3-activation}},\n            \"coAdmin\": {{C3-co-admin}},\n            \"tenantAdmin\": {{C3-tenantadmin}},\n            \"activationProfileId\": {{C3-profile}},\n            \"hasSubscriptionPlanType\": {{C3-subscriptionplan}}\n        }"
+						},
+						"url": {
+							"raw": "https://10.29.205.225/v1/users",
+							"protocol": "https",
+							"host": [
+								"10",
+								"29",
+								"205",
+								"225"
+							],
+							"path": [
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Disable a User",
+			"item": [
+				{
+					"name": "C3 Disable Users - Runner",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "B2BE51EBB2208CB3",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cliqradmin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n    \"accountSource\": \"AdminCreated\",\n    \"coAdmin\": {{C3-co-admin}},\n    \"companyName\": \"{{C3-company}}\",\n    \"emailAddr\": \"{{C3-first}}@cliqrtech.com\",\n    \"enabled\": {{C3-enabled}},\n    \"firstName\": \"{{C3-first}}\",\n    \"id\": \"{{C3-ID}}\",\n    \"lastName\": \"{{C3-last}}\",\n    \"phoneNumber\": {{C3-phone}},\n    \"tenantAdmin\": {{C3-tenantadmin}},\n    \"tenantId\": \"{{C3-tenant}}\",\n    \"type\": \"STANDARD\",\n    \"username\": \"{{C3-first}}{{C3-US}}{{C3-diff}}\"\n}\n"
+						},
+						"url": {
+							"raw": "https://10.29.205.225/v1/users/{{C3-ID}}",
+							"protocol": "https",
+							"host": [
+								"10",
+								"29",
+								"205",
+								"225"
+							],
+							"path": [
+								"v1",
+								"users",
+								"{{C3-ID}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Delete Users",
+			"item": [
+				{
+					"name": "C3 Disable Users - Runner",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "B2BE51EBB2208CB3",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cliqradmin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n    \"accountSource\": \"AdminCreated\",\n    \"coAdmin\": {{C3-co-admin}},\n    \"companyName\": \"{{C3-company}}\",\n    \"emailAddr\": \"{{C3-first}}@cliqrtech.com\",\n    \"enabled\": {{C3-enabled}},\n    \"firstName\": \"{{C3-first}}\",\n    \"id\": \"{{C3-ID}}\",\n    \"lastName\": \"{{C3-last}}\",\n    \"phoneNumber\": {{C3-phone}},\n    \"tenantAdmin\": {{C3-tenantadmin}},\n    \"tenantId\": \"{{C3-tenant}}\",\n    \"type\": \"STANDARD\",\n    \"username\": \"{{C3-first}}{{C3-US}}{{C3-diff}}\"\n}\n"
+						},
+						"url": {
+							"raw": "https://10.29.205.225/v1/users/{{C3-ID}}",
+							"protocol": "https",
+							"host": [
+								"10",
+								"29",
+								"205",
+								"225"
+							],
+							"path": [
+								"v1",
+								"users",
+								"{{C3-ID}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C3 Delete Users - Runner",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "B2BE51EBB2208CB3",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cliqradmin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://10.29.205.225/v1/users/{{C3-ID}}",
+							"protocol": "https",
+							"host": [
+								"10",
+								"29",
+								"205",
+								"225"
+							],
+							"path": [
+								"v1",
+								"users",
+								"{{C3-ID}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Deploy CentOS7 Image",
+			"item": [
+				{
+					"name": "Deploy CentOS 7",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "B2BE51EBB2208CB3",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "cliqradmin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"appId\": \"33\",\n\t\"appVersion\": \"3\",\n\t\"environmentId\": \"1\",\n\t\"jobs\": [\n\t\t{\n\t\t\t\"numNodesToLaunch\": 1,\n\t\t\t\"parameters\": {\n\t\t\t\t\"basicSettings\": [\n                        {\n                            \"name\": \"FullClone\",\n                            \"value\": \"true\"\n                        },\n                        {\n                            \"name\": \"UserDatastoreCluster\",\n                            \"value\": \"datastore2-206\"\n                        },\n                        {\n                            \"name\": \"UserDataCenterName\",\n                            \"value\": \"Datacenter\"\n                        },\n                        {\n                            \"name\": \"UserClusterName\",\n                            \"value\": \"SJC_LAB\"\n                        },\n                        {\n                            \"name\": \"UserDatastore\",\n                            \"value\": \"\"\n                        },\n                        {\n                            \"name\": \"UserResourcePoolName\",\n                            \"value\": \"\"\n                        },\n                        {\n                            \"name\": \"UserTargetDeploymentFolder\",\n                            \"value\": \"/Cisco Live VM's\"\n                        }\n                    ],\n\t\t\t\t\"cloudParams\": {\n\t\t\t\t\t\"accountId\": \"1\",\n\t\t\t\t\t\"cloudProperties\": [\n\t\t\t\t\t\t{\n                            \"name\": \"FullClone\",\n                            \"value\": \"true\"\n                        },\n                        {\n                            \"name\": \"UserDataCenterName\",\n                            \"value\": \"Datacenter\"\n                        },\n                        {\n                            \"name\": \"publicIpAllocate\",\n                            \"value\": \"true\"\n                        },\n                        {\n                            \"name\": \"UserDatastoreCluster\",\n                            \"value\": \"datastore2-206\"\n                        },\n                        {\n                            \"name\": \"CC_AUTO_SELECT_NETWORK\",\n                            \"value\": \"false\"\n                        },\n                        {\n                            \"name\": \"numNICs\",\n                            \"value\": \"\"\n                        },\n                        {\n                            \"name\": \"networkId\",\n                            \"value\": \"VM Network\"\n                        },\n                        {\n                            \"name\": \"privateIPAllocationMode\",\n                            \"value\": \"DHCP\"\n                        },\n                        {\n                            \"name\": \"type\",\n                            \"value\": \"NETWORK\"\n                        },\n                        {\n                            \"name\": \"UserTargetDeploymentFolder\",\n                            \"value\": \"/Cisco Live VM's\"\n                        },\n                        {\n                            \"name\": \"order\",\n                            \"value\": \"1\"\n                        },\n                        {\n                            \"name\": \"UserClusterName\",\n                            \"value\": \"SJC_LAB\"\n                        }\t\n\t\t\t\t\t],\n\t\t\t\t\t\"CloudRegionId\": \"1\",\n\t\t\t\t\t\"instance\": \"Silver\",\n\t\t\t\t\t\"rootVolumeSize\": \"0\",\n\t\t\t\t\t\"volumes\": []\n\t\t\t\t}\n\t\t\t},\n\t\t\t\"policyIds\": null,\n\t\t\t\"securityProfiles\": [],\n\t\t\t\"tagIds\": [],\n\t\t\t\"tierId\": \"34\"\n\t\t}\n\t],\n\t\"metadatas\": [\n\t\t{\n            \"namespace\": \"\",\n            \"name\": \"Name\",\n            \"value\": \"%JOB_NAME%\",\n            \"editable\": false,\n            \"required\": true\n        }\n     ],\n\t\"name\": \"scoobydoo2\",\n    \"parameters\": {\n    \t\"appParams\": [],\n\t\t\"cloudParams\": {\n\t\t\t\"cloudRegionId\": \"1\",\n\t\t\t\"accountId\": \"1\"\n\t\t}\n\t},\n\t\"policyIds\": null,\n\t\"preventTermination\": false,\n\t\"tagIds\": [],\n\t\"securityProfileIds\": []\n}"
+						},
+						"url": {
+							"raw": "https://10.29.205.225/v2/jobs",
+							"protocol": "https",
+							"host": [
+								"10",
+								"29",
+								"205",
+								"225"
+							],
+							"path": [
+								"v2",
+								"jobs"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "C3 Delete VM",
+			"item": [
+				{
+					"name": "Delete a VM",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://10.29.205.225/v2/jobs/{{jobId}}",
+							"protocol": "https",
+							"host": [
+								"10",
+								"29",
+								"205",
+								"225"
+							],
+							"path": [
+								"v2",
+								"jobs",
+								"{{jobId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
