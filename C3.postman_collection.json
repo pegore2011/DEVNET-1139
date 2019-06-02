@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "ff2ef476-7094-4b5a-b08e-fbeeaa590e9a",
+		"_postman_id": "6b9eb514-5d4e-4126-a7f7-59ffd15a2998",
 		"name": "C3",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -28,18 +28,14 @@
 						},
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
-							"raw": "https://10.29.205.225/v1/users",
+							"raw": "https://c3.lab.test.local/v1/users",
 							"protocol": "https",
 							"host": [
-								"10",
-								"29",
-								"205",
-								"225"
+								"c3",
+								"lab",
+								"test",
+								"local"
 							],
 							"path": [
 								"v1",
@@ -74,18 +70,14 @@
 						},
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
-							"raw": "https://10.29.205.225/v1/apps",
+							"raw": "https://c3.lab.test.local./v1/apps",
 							"protocol": "https",
 							"host": [
-								"10",
-								"29",
-								"205",
-								"225"
+								"c3",
+								"lab",
+								"test",
+								"local"
 							],
 							"path": [
 								"v1",
@@ -143,13 +135,13 @@
 							"raw": "      {\n            \"password\": \"bubba12345\",\n            \"enabled\": true,\n            \"isSelfActivation\": false,\n            \"firstName\": \"bubba\",\n            \"lastName\": \"Gore\",\n            \"companyName\": \"Cliqr\",\n            \"tenantId\": \"1\",\n            \"emailAddr\": \"bubba@cliqrtech.com\",\n            \"phoneNumber\": null,\n            \"externalId\": null,\n            \"status\": \"ENABLED\",\n            \"detail\": null,\n            \"activationData\": null,\n            \"coAdmin\": false,\n            \"tenantAdmin\": true,\n            \"activationProfileId\": null,\n            \"hasSubscriptionPlanType\": false\n        }"
 						},
 						"url": {
-							"raw": "https://10.29.205.225/v1/users",
+							"raw": "https://c3.lab.test.local/v1/users",
 							"protocol": "https",
 							"host": [
-								"10",
-								"29",
-								"205",
-								"225"
+								"c3",
+								"lab",
+								"test",
+								"local"
 							],
 							"path": [
 								"v1",
@@ -197,13 +189,13 @@
 							"raw": " {\n            \"password\": \"{{C3-pwd}}\",\n            \"enabled\": {{C3-enabled}},\n            \"isSelfActivation\": false,\n            \"firstName\": \"{{C3-first}}\",\n            \"lastName\": \"{{C3-last}}\",\n            \"companyName\": \"{{C3-company}}\",\n            \"tenantId\": \"{{C3-tenant}}\",\n            \"emailAddr\": \"{{C3-email}}@cliqrtech.com\",\n            \"phoneNumber\": {{C3-phone}},\n            \"externalId\": {{C3-external}},\n            \"status\": \"{{C3-status}}\",\n            \"detail\": {{C3-detail}},\n            \"activationData\": {{C3-activation}},\n            \"coAdmin\": {{C3-co-admin}},\n            \"tenantAdmin\": {{C3-tenantadmin}},\n            \"activationProfileId\": {{C3-profile}},\n            \"hasSubscriptionPlanType\": {{C3-subscriptionplan}}\n        }"
 						},
 						"url": {
-							"raw": "https://10.29.205.225/v1/users",
+							"raw": "https://c3.lab.test.local/v1/users",
 							"protocol": "https",
 							"host": [
-								"10",
-								"29",
-								"205",
-								"225"
+								"c3",
+								"lab",
+								"test",
+								"local"
 							],
 							"path": [
 								"v1",
@@ -250,13 +242,13 @@
 							"raw": " {\n    \"accountSource\": \"AdminCreated\",\n    \"coAdmin\": {{C3-co-admin}},\n    \"companyName\": \"{{C3-company}}\",\n    \"emailAddr\": \"{{C3-first}}@cliqrtech.com\",\n    \"enabled\": {{C3-enabled}},\n    \"firstName\": \"{{C3-first}}\",\n    \"id\": \"{{C3-ID}}\",\n    \"lastName\": \"{{C3-last}}\",\n    \"phoneNumber\": {{C3-phone}},\n    \"tenantAdmin\": {{C3-tenantadmin}},\n    \"tenantId\": \"{{C3-tenant}}\",\n    \"type\": \"STANDARD\",\n    \"username\": \"{{C3-first}}{{C3-US}}{{C3-diff}}\"\n}\n"
 						},
 						"url": {
-							"raw": "https://10.29.205.225/v1/users/{{C3-ID}}",
+							"raw": "https://c3.lab.test.local/v1/users/{{C3-ID}}",
 							"protocol": "https",
 							"host": [
-								"10",
-								"29",
-								"205",
-								"225"
+								"c3",
+								"lab",
+								"test",
+								"local"
 							],
 							"path": [
 								"v1",
@@ -304,13 +296,13 @@
 							"raw": " {\n    \"accountSource\": \"AdminCreated\",\n    \"coAdmin\": {{C3-co-admin}},\n    \"companyName\": \"{{C3-company}}\",\n    \"emailAddr\": \"{{C3-first}}@cliqrtech.com\",\n    \"enabled\": {{C3-enabled}},\n    \"firstName\": \"{{C3-first}}\",\n    \"id\": \"{{C3-ID}}\",\n    \"lastName\": \"{{C3-last}}\",\n    \"phoneNumber\": {{C3-phone}},\n    \"tenantAdmin\": {{C3-tenantadmin}},\n    \"tenantId\": \"{{C3-tenant}}\",\n    \"type\": \"STANDARD\",\n    \"username\": \"{{C3-first}}{{C3-US}}{{C3-diff}}\"\n}\n"
 						},
 						"url": {
-							"raw": "https://10.29.205.225/v1/users/{{C3-ID}}",
+							"raw": "https://c3.lab.test.local/v1/users/{{C3-ID}}",
 							"protocol": "https",
 							"host": [
-								"10",
-								"29",
-								"205",
-								"225"
+								"c3",
+								"lab",
+								"test",
+								"local"
 							],
 							"path": [
 								"v1",
@@ -353,13 +345,13 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://10.29.205.225/v1/users/{{C3-ID}}",
+							"raw": "https://c3.lab.test.local/v1/users/{{C3-ID}}",
 							"protocol": "https",
 							"host": [
-								"10",
-								"29",
-								"205",
-								"225"
+								"c3",
+								"lab",
+								"test",
+								"local"
 							],
 							"path": [
 								"v1",
@@ -407,13 +399,13 @@
 							"raw": "{\n\t\"appId\": \"33\",\n\t\"appVersion\": \"3\",\n\t\"environmentId\": \"1\",\n\t\"jobs\": [\n\t\t{\n\t\t\t\"numNodesToLaunch\": 1,\n\t\t\t\"parameters\": {\n\t\t\t\t\"basicSettings\": [\n                        {\n                            \"name\": \"FullClone\",\n                            \"value\": \"true\"\n                        },\n                        {\n                            \"name\": \"UserDatastoreCluster\",\n                            \"value\": \"datastore2-206\"\n                        },\n                        {\n                            \"name\": \"UserDataCenterName\",\n                            \"value\": \"Datacenter\"\n                        },\n                        {\n                            \"name\": \"UserClusterName\",\n                            \"value\": \"SJC_LAB\"\n                        },\n                        {\n                            \"name\": \"UserDatastore\",\n                            \"value\": \"\"\n                        },\n                        {\n                            \"name\": \"UserResourcePoolName\",\n                            \"value\": \"\"\n                        },\n                        {\n                            \"name\": \"UserTargetDeploymentFolder\",\n                            \"value\": \"/Cisco Live VM's\"\n                        }\n                    ],\n\t\t\t\t\"cloudParams\": {\n\t\t\t\t\t\"accountId\": \"1\",\n\t\t\t\t\t\"cloudProperties\": [\n\t\t\t\t\t\t{\n                            \"name\": \"FullClone\",\n                            \"value\": \"true\"\n                        },\n                        {\n                            \"name\": \"UserDataCenterName\",\n                            \"value\": \"Datacenter\"\n                        },\n                        {\n                            \"name\": \"publicIpAllocate\",\n                            \"value\": \"true\"\n                        },\n                        {\n                            \"name\": \"UserDatastoreCluster\",\n                            \"value\": \"datastore2-206\"\n                        },\n                        {\n                            \"name\": \"CC_AUTO_SELECT_NETWORK\",\n                            \"value\": \"false\"\n                        },\n                        {\n                            \"name\": \"numNICs\",\n                            \"value\": \"\"\n                        },\n                        {\n                            \"name\": \"networkId\",\n                            \"value\": \"VM Network\"\n                        },\n                        {\n                            \"name\": \"privateIPAllocationMode\",\n                            \"value\": \"DHCP\"\n                        },\n                        {\n                            \"name\": \"type\",\n                            \"value\": \"NETWORK\"\n                        },\n                        {\n                            \"name\": \"UserTargetDeploymentFolder\",\n                            \"value\": \"/Cisco Live VM's\"\n                        },\n                        {\n                            \"name\": \"order\",\n                            \"value\": \"1\"\n                        },\n                        {\n                            \"name\": \"UserClusterName\",\n                            \"value\": \"SJC_LAB\"\n                        }\t\n\t\t\t\t\t],\n\t\t\t\t\t\"CloudRegionId\": \"1\",\n\t\t\t\t\t\"instance\": \"Silver\",\n\t\t\t\t\t\"rootVolumeSize\": \"0\",\n\t\t\t\t\t\"volumes\": []\n\t\t\t\t}\n\t\t\t},\n\t\t\t\"policyIds\": null,\n\t\t\t\"securityProfiles\": [],\n\t\t\t\"tagIds\": [],\n\t\t\t\"tierId\": \"34\"\n\t\t}\n\t],\n\t\"metadatas\": [\n\t\t{\n            \"namespace\": \"\",\n            \"name\": \"Name\",\n            \"value\": \"%JOB_NAME%\",\n            \"editable\": false,\n            \"required\": true\n        }\n     ],\n\t\"name\": \"scoobydoo2\",\n    \"parameters\": {\n    \t\"appParams\": [],\n\t\t\"cloudParams\": {\n\t\t\t\"cloudRegionId\": \"1\",\n\t\t\t\"accountId\": \"1\"\n\t\t}\n\t},\n\t\"policyIds\": null,\n\t\"preventTermination\": false,\n\t\"tagIds\": [],\n\t\"securityProfileIds\": []\n}"
 						},
 						"url": {
-							"raw": "https://10.29.205.225/v2/jobs",
+							"raw": "https://c3.lab.test.local/v2/jobs",
 							"protocol": "https",
 							"host": [
-								"10",
-								"29",
-								"205",
-								"225"
+								"c3",
+								"lab",
+								"test",
+								"local"
 							],
 							"path": [
 								"v2",
@@ -438,13 +430,13 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://10.29.205.225/v2/jobs/{{jobId}}",
+							"raw": "https://c3.lab.test.local/v2/jobs/{{jobId}}",
 							"protocol": "https",
 							"host": [
-								"10",
-								"29",
-								"205",
-								"225"
+								"c3",
+								"lab",
+								"test",
+								"local"
 							],
 							"path": [
 								"v2",
