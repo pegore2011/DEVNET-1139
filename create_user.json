@@ -1,0 +1,19 @@
+      {
+            "password": "bubba12345",
+            "enabled": true,
+            "isSelfActivation": false,
+            "firstName": "bubbaxxx",
+            "lastName": "CiscoLive",
+            "companyName": "Pattycakes",
+            "tenantId": "1",
+            "emailAddr": "bubbaxxx@cliqrtech.com",
+            "phoneNumber": null,
+            "externalId": null,
+            "status": "ENABLED",
+            "detail": null,
+            "activationData": null,
+            "coAdmin": false,
+            "tenantAdmin": true,
+            "activationProfileId": null,
+            "hasSubscriptionPlanType": false
+        }
