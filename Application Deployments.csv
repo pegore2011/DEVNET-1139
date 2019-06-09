@@ -1,10 +1,10 @@
-C3-appid,vmdatastore,vmpolicy,vmname,,,,,,,,,,
-33,datastore2-206,Silver,Scooby,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,datastore2-206
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,Silver
+C3-appid,networkid,vmdatastore,vmpolicy,vmname,,,,,,,,,,
+33,VM Network,datastore2-206,Silver,Scooby,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,datastore2-206
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,Silver
