@@ -16,12 +16,12 @@
 							"basic": [
 								{
 									"key": "password",
-									"value": "6867CAFB192ECEE3",
+									"value": "B2BE51EBB2208CB3",
 									"type": "string"
 								},
 								{
 									"key": "username",
-									"value": "devnet_f1",
+									"value": "cliqradmin",
 									"type": "string"
 								}
 							]
@@ -61,13 +61,13 @@
 							"type": "basic",
 							"basic": [
 								{
-									"key": "username",
-									"value": "devnet_f1",
+									"key": "password",
+									"value": "B2BE51EBB2208CB3",
 									"type": "string"
 								},
 								{
-									"key": "password",
-									"value": "6867CAFB192ECEE3",
+									"key": "username",
+									"value": "cliqradmin",
 									"type": "string"
 								}
 							]
@@ -107,13 +107,13 @@
 							"type": "basic",
 							"basic": [
 								{
-									"key": "username",
-									"value": "devnet_f1",
+									"key": "password",
+									"value": "B2BE51EBB2208CB3",
 									"type": "string"
 								},
 								{
-									"key": "password",
-									"value": "6867CAFB192ECEE3",
+									"key": "username",
+									"value": "cliqrdmin",
 									"type": "string"
 								},
 								{
@@ -172,13 +172,13 @@
 							"type": "basic",
 							"basic": [
 								{
-									"key": "username",
-									"value": "devnet_f1",
+									"key": "password",
+									"value": "B2BE51EBB2208CB3",
 									"type": "string"
 								},
 								{
-									"key": "password",
-									"value": "6867CAFB192ECEE3",
+									"key": "username",
+									"value": "cliqradmin",
 									"type": "string"
 								}
 							]
@@ -226,12 +226,12 @@
 							"basic": [
 								{
 									"key": "password",
-									"value": "6867CAFB192ECEE3",
+									"value": "B2BE51EBB2208CB3",
 									"type": "string"
 								},
 								{
 									"key": "username",
-									"value": "devnet_f1",
+									"value": "cliqradmin",
 									"type": "string"
 								}
 							]
@@ -279,13 +279,13 @@
 							"type": "basic",
 							"basic": [
 								{
-									"key": "username",
-									"value": "devnet_f1",
+									"key": "password",
+									"value": "B2BE51EBB2208CB3",
 									"type": "string"
 								},
 								{
-									"key": "password",
-									"value": "6867CAFB192ECEE3",
+									"key": "username",
+									"value": "cliqradmin",
 									"type": "string"
 								}
 							]
@@ -328,13 +328,13 @@
 							"type": "basic",
 							"basic": [
 								{
-									"key": "username",
-									"value": "devnet_f1",
+									"key": "password",
+									"value": "B2BE51EBB2208CB3",
 									"type": "string"
 								},
 								{
-									"key": "password",
-									"value": "6867CAFB192ECEE3",
+									"key": "username",
+									"value": "cliqradmin",
 									"type": "string"
 								}
 							]
@@ -383,12 +383,12 @@
 							"basic": [
 								{
 									"key": "password",
-									"value": "6867CAFB192ECEE3",
+									"value": "B2BE51EBB2208CB3",
 									"type": "string"
 								},
 								{
 									"key": "username",
-									"value": "devnet_f1",
+									"value": "cliqradmin",
 									"type": "string"
 								}
 							]
@@ -435,13 +435,13 @@
 							"type": "basic",
 							"basic": [
 								{
-									"key": "username",
-									"value": "devnet_f1",
+									"key": "password",
+									"value": "B2BE51EBB2208CB3",
 									"type": "string"
 								},
 								{
-									"key": "password",
-									"value": "6867CAFB192ECEE3",
+									"key": "username",
+									"value": "cliqradmin",
 									"type": "string"
 								}
 							]
@@ -488,13 +488,13 @@
 							"type": "basic",
 							"basic": [
 								{
-									"key": "username",
-									"value": "devnet_f1",
+									"key": "password",
+									"value": "B2BE51EBB2208CB3",
 									"type": "string"
 								},
 								{
-									"key": "password",
-									"value": "6867CAFB192ECEE3",
+									"key": "username",
+									"value": "cliqradmin",
 									"type": "string"
 								}
 							]
